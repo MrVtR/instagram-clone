@@ -24,6 +24,8 @@
     height: 132px;
     left: 0px;
     top: 0px;
+    position: sticky;
+    
     .cell-bar{
         width: 100%;
         display: flex;
@@ -64,9 +66,7 @@
         @include simple-flex(space-between, center, row);
         width: 100%;
         padding: 10px 0 6px;
-        position: sticky;
         top: 0;
-        border-bottom: 1px solid #e2e2e2;
         z-index: 1;
         .search-bar{
             display: flex;
@@ -107,7 +107,56 @@
             display: flex;
             flex-direction: column;
         }
-    }    
+    }   
+    .filters{
+        
+        display: flex;
+        flex-direction: row;
+        padding: 9px 0 7px 8px;
+        
+        .grid1{
+           @extend %grid;
+            width: 75px;
+            height: 32px;
+        }
+        .grid2{
+            @extend %grid;
+             width: 77px;
+             height: 32px;
+         }
+         .grid3{
+            @extend %grid;
+             width: 56px;
+             height: 32px;
+             .textC{
+                @extend %text;
+                padding: 8px 10px 7px 11px;
+             }
+         }
+         .grid4{
+            @extend %grid;
+             width: 68px;
+             height: 32px;
+             .textC{
+                @extend %text;
+                padding: 8px 10px 7px 11px;
+             }
+         }
+         .grid5{
+            @extend %grid;
+             width: 53px;
+             height: 32px;
+             .textC{
+                @extend %text;
+                padding: 8px 10px 7px 11px;
+             }
+             
+         }
+         .icon{
+            padding: 8.72px 7px 8.5px 12.5px;
+        }
+        @extend %text;
+    } 
 }
 
 
