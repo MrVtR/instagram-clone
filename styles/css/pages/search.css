@@ -43,6 +43,10 @@ body {
   width: 22px;
 }
 
+@font-face {
+  font-family: "SF Pro Text Regular";
+  src: url("../../../assets/font/SF.ttf");
+}
 .posts {
   display: flex;
   flex-direction: row;
@@ -55,6 +59,98 @@ body {
   width: 124px;
   height: 119.53px;
   padding: 0.5px;
+}
+
+.bar {
+  background-color: #FAFAFA;
+  width: 375px;
+  height: 132px;
+  left: 0px;
+  top: 0px;
+}
+.bar .cell-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 14px;
+  padding-left: 21px;
+}
+.bar .cell-bar .text-cell {
+  width: 53px;
+  height: 18px;
+  font-family: "SF Pro Text Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: -0.3px;
+  color: #171717;
+}
+.bar .cell-bar .teste {
+  width: 325px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.bar .cell-bar .teste .signal-icon {
+  padding-left: 5px;
+}
+.bar .cell-bar .teste .wifi-icon {
+  padding: 0 5px;
+}
+.bar .cell-bar .teste .batery-icon {
+  padding-right: 5px;
+}
+.bar header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px 0 6px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #e2e2e2;
+  z-index: 1;
+}
+.bar header .search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 327px;
+  height: 36px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: rgba(118, 118, 128, 0.12);
+  border-radius: 10px;
+}
+.bar header .lupa-icon {
+  padding: 11.25px 11.25px 13.07px 11.25px;
+  width: 13.68px;
+  height: 13.68px;
+}
+.bar header .text-search {
+  height: 22px;
+  left: 10.4%;
+  right: 74.01%;
+  top: calc(50% - 22px/2 - 1px);
+  font-family: SF Pro Text, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  color: rgba(60, 60, 67, 0.6);
+}
+.bar header .shape-icon {
+  width: 20px;
+  height: 20px;
+  padding: 0px 10px;
+}
+.bar header .cell-bar {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=search.css.map */
