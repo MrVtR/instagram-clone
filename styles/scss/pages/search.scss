@@ -1,0 +1,17 @@
+@import "../styles.scss";
+
+.posts{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .foto-container{
+        display: flex;
+        flex-direction: column;
+       // padding: 0px 10px;
+       width:124px;
+       height: 119.53px;
+       padding: 0.5px;
+    }
+}
